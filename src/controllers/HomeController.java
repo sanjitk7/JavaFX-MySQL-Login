@@ -9,8 +9,6 @@ package controllers;
 //import com.mysql.cj.jdbc.PreparedStatement;
 import java.sql.*;
 import java.net.URL;
-//import java.sql.ResultSet;
-//import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableValue;
@@ -129,6 +127,7 @@ public class HomeController implements Initializable {
     private void fetColumnList() {
 
         try {
+            System.out.println("statement executes");
             ResultSet rs = connection.createStatement().executeQuery(SQL);
 
             //SQL FOR SELECTING ALL OF CUSTOMER

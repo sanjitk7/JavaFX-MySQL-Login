@@ -1,10 +1,5 @@
 package controllers;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -25,10 +20,6 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import utils.ConnectionUtil;
 
-/**
- *
- * @author oXCToo
- */
 public class LoginController implements Initializable {
 
     @FXML

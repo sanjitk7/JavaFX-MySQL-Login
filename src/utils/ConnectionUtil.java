@@ -18,8 +18,8 @@ public class ConnectionUtil {
     public static Connection conDB()
     {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/keeptoo_systems", "root", "");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/sanjit_tables", "root", "Luckyusa1");
             return con;
         } catch (ClassNotFoundException | SQLException ex) {
             System.err.println("ConnectionUtil : "+ex.getMessage());
